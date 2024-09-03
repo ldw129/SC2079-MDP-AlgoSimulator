@@ -29,7 +29,7 @@ int main()
 	auto result2 = ms.GetOptimalOrderDP(false);
 	auto end = std::chrono::system_clock::now();
 	auto elapse = end - start;
-	std::cout << "Duration taken: " << std::chrono::duration_cast<std::chrono::milliseconds>(elapse) << std::endl;
+	std::cout << "Duration taken: " << std::chrono::duration_cast<std::chrono::milliseconds>(elapse).count() << std::endl;
 	std::cout << "result:" << result2.size() << std::endl;
 	std::cout << result2 << std::endl;
 	return 0;
